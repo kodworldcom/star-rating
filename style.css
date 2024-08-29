@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.star-rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 2em;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+  color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
